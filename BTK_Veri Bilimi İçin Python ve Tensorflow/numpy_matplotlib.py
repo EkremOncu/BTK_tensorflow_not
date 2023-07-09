@@ -15,34 +15,63 @@ print("")
 b = np.zeros(5)
 print(b)
 print("")
+i = np.zeros(5, dtype= int)
+print(i)
+print("")
+
 b = np.zeros((4,4))
 print(b)
 print("")
-c = np.ones((5,5))
+c = np.ones((5,5), dtype= int)
 print(c) 
+print("")
+
+r = np.full((3,5),13)
+print(r) 
+print("")
 """
 
 # linspace / eye / random
 """
 a = np.linspace(0,99,100)
 print(a)
+
 # eye
+
 print("")
 b = np.eye(7)
 print(b) 
 print("")
+
 # random
-c = np.random.randn(4) 
+
+c = np.random.randn(4) # yaklasik (ortalama=0, standart sapma=1) göre rasgele sayılar üretir.
 print(c)
 print("")
 s = np.random.randn(4,3) 
 print(s)
 print("")
+
 d = np.random.randint(4,13) 
 print(d)
 print("")
+
+d = np.random.randint(4,65, size= 7) # -> np.random.randint(4,65,7) 
+print(d)
+print("")
+
+d = np.random.randint(4,13, (3,3))  # -> size= (3,3)
+print(d)
+print("")
+
 r = np.random.randint(1,59,9) 
-print(r) 
+print(r)
+print("")
+ 
+n = np.random.normal(10, 4, (3,4)) # Ortalamasi 10, standart sapması 4
+print(n)
+
+
 """
 # Min / Max 
 """
@@ -85,6 +114,14 @@ son = diz[yenidizi]
 print(son) 
 """
 
+# fancy Index
+"""
+v = np.array([0,  3,  6,  9, 12, 15, 18, 21, 24, 27])
+al_getir = [1,3,5]
+print(v[al_getir]) # v[1], v[3], v[5]'i getirecek
+print("")
+print(v[[0,2,4]])
+"""
 
 #  ------------------- Matplotlip ------------------------
 """        
