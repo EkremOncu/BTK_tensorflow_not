@@ -182,9 +182,9 @@ dataFrame3 = pd.DataFrame(sozluk3)
 sondataFrame = pd.concat([dataFrame1, dataFrame2, dataFrame3], axis=0)
 print(sondataFrame) # Concat icine (ignore_index =True) yaz index prob kurtul
 print("")
-
+"""
 # ---------- Merge (birlestirme,kaynastirma) ------------
-
+"""
 sozluk1 = {"Isim": ["Dennis", "Dlo", "AD", "Hilly"],
            "Spor": ["Kosu", "Yüzme", "Kosu", "Basketbol"] }
 dataFrame1 = pd.DataFrame(sozluk1, index= [0, 1, 2, 3])
