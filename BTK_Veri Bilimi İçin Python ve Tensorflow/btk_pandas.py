@@ -61,7 +61,7 @@ print(yenidataFrame.iloc[1]) # index loc
 
 """
 data = np.random.randn(4,3)
-
+    
 dataFrame = pd.DataFrame(data)
 
 yenidataFrame = pd.DataFrame(data, columns= ["Maas", "Yas", "Saat"], index=["LBJ", "Salah", "Valencia", "Tevez"])
